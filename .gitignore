@@ -1,0 +1,8 @@
+# Python virtual environment
+env/
+
+# Python cache
+__pycache__/
+
+# Visual Studio specific
+.vs/
