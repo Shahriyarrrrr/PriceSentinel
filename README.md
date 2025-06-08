@@ -1,6 +1,7 @@
 # PriceSentinel: Automated E-commerce Deal Tracker
 
-![PriceSentinel Screenshot](placeholder.png) <!-- You will replace placeholder.png later -->
+![PriceSentinel Screenshot](![SCREENSHOT_O1](https://github.com/user-attachments/assets/e669af4b-d523-4516-aa35-04e2ac2883b6)
+) <!-- You will replace placeholder.png later -->
 
 PriceSentinel is a powerful desktop application built with Python that automates the process of tracking product prices on e-commerce websites. It features a clean graphical user interface (GUI) built with Tkinter, allowing users to manage a list of products, set target prices, and receive real-time email notifications when a desired price drop is detected.
 
