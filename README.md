@@ -1,11 +1,10 @@
-# PriceSentinel: Automated E-commerce Deal Tracker
+\# PriceSentinel: Automated E-commerce Deal Tracker
 
-![PriceSentinel Screenshot](![SCREENSHOT_O1](https://github.com/user-attachments/assets/e669af4b-d523-4516-aa35-04e2ac2883b6)
-) <!-- You will replace placeholder.png later -->
+![PriceSentinel Screenshot](screenshot_01.png)
 
 PriceSentinel is a powerful desktop application built with Python that automates the process of tracking product prices on e-commerce websites. It features a clean graphical user interface (GUI) built with Tkinter, allowing users to manage a list of products, set target prices, and receive real-time email notifications when a desired price drop is detected.
 
-The application leverages multi-threading to run the web scraping process in the background, ensuring the UI remains responsive at all times. All tracked products and user settings are saved locally to a CSV file for data persistence across sessions. PriceSentinel is designed to be a practical, set-and-forget tool for savvy online shoppers who want to catch the best deals without constant manual checking. It's an ideal example of using Python for practical automation and web interaction.
+The application leverages multi-threading to run the web scraping process in the background, ensuring the UI remains responsive at all times. All tracked products and user settings are saved locally to a CSV file for data persistence across sessions.PriceSentinel is designed to be a practical, set-and-forget tool for savvy online shoppers who want to catch the best deals without constant manual checking. It's an ideal example of using Python for practical automation and web interaction.
 
 ---
 
@@ -31,7 +30,7 @@ To run this project, you'll need Python 3 installed.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/PriceSentinel.git](https://github.com/your-username/PriceSentinel.git)
+    git clone [https://github.com/Shahriyarrrrr/PriceSentinel.git](https://github.com/Shahriyarrrrr/PriceSentinel.git)
     cd PriceSentinel
     ```
 
@@ -56,3 +55,4 @@ To run this project, you'll need Python 3 installed.
 2.  Use the "Add Product" button to add product URLs and your desired target prices.
 3.  Fill in your email details in the "Email Alert Settings" panel. **Note:** For Gmail, you must generate and use an **App Password**.
 4.  Click "Start Scraper" to begin tracking. Logs will appear in the text box in real time.
+
