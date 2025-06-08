@@ -1,89 +1,72 @@
-|                                                                                     **PriceSentinel: Automated E-Commerce Deal Tracker**                                                                                      |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![PriceSentinel Screenshot](screenshot_01.png)                                                                                                                                                                               |
-| **PriceSentinel** is a Python-based desktop application that automates price tracking on e-commerce websites. It features a responsive GUI (Tkinter), background web scraping, email alerts, and persistent CSV storage.    |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **🚀 Key Features**                                                                                                                                                                                                          |
-| - 🖥️ **Intuitive GUI**: User-friendly interface using Tkinter for managing products.                                                                                                                                        |
-| - ⚙️ **Background Scraping**: Runs in a separate thread to keep the UI responsive.                                                                                                                                          |
-| - 📧 **Email Alerts**: Sends real-time notifications when a product reaches the target price (Gmail App Password required).                                                                                                 |
-| - 💾 **Persistent Storage**: Product list is saved to `products.csv` for future sessions.                                                                                                                                   |
-| - 🛡️ **Robust Scraper**: Uses headers and error handling to mimic a real browser.                                                                                                                                           |
-| - 🛍️ **Dynamic Product List**: Add or remove tracked items directly from the GUI.                                                                                                                                           |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **🛠️ Technology Stack**                                                                                                                                                                                                      |
-| | Component        | Technology                          |                                                                                                                                                                                            |
-| |------------------|--------------------------------------|                                                                                                                                                                                            |
-| | Language         | Python 3                             |                                                                                                                                                                                            |
-| | GUI              | Tkinter                              |                                                                                                                                                                                            |
-| | Web Scraping     | `requests`, `BeautifulSoup4`         |                                                                                                                                                                                            |
-| | Concurrency      | `threading`, `queue`                 |                                                                                                                                                                                            |
-| | Email Service    | `smtplib`, `email`                   |                                                                                                                                                                                            |
-| | Data Storage     | CSV File (`products.csv`)            |                                                                                                                                                                                            |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **⚙️ Installation & Setup**                                                                                                                                                                                                  |
-| 1. **Clone the Repository**                                                                                                                                                                                                 |
-|    ```bash                                                                                                                                                                                                                   |
-|    git clone https://github.com/Shahriyarrrrr/PriceSentinel.git                                                                                                                                                             |
-|    cd PriceSentinel                                                                                                                                                                                                          |
-|    ```                                                                                                                                                                                                                       |
-| 2. **Create & Activate Virtual Environment**                                                                                                                                                                                 |
-|    ```bash                                                                                                                                                                                                                   |
-|    # For Windows                                                                                                                                                                                                             |
-|    python -m venv env                                                                                                                                                                                                        |
-|    .\env\Scripts\activate                                                                                                                                                                                                    |
-|    ```                                                                                                                                                                                                                       |
-| 3. **Install Required Libraries**                                                                                                                                                                                            |
-|    ```bash                                                                                                                                                                                                                   |
-|    pip install -r requirements.txt                                                                                                                                                                                           |
-|    ```                                                                                                                                                                                                                       |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **🧪 How to Use**                                                                                                                                                                                                             |
-| 1. Launch the App: `python your_main_script_name.py`                                                                                                                                                                        |
-| 2. Click "Add Product" and enter product URL & target price                                                                                                                                                                 |
-| 3. Configure email settings with Gmail credentials (App Password required)                                                                                                                                                  |
-| 4. Click "Start Scraper" to begin monitoring. Logs will display in real time.                                                                                                                                               |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **📂 File Structure**                                                                                                                                                                                                         |
-| ```bash                                                                                                                                                                                                                      |
-| PriceSentinel/                                                                                                                                                                                                               |
-| ├── main.py                 # Entry point                                                                                                                                                                                    |
-| ├── scraper.py              # Scraping logic                                                                                                                                                                                 |
-| ├── email_alert.py          # Email functionality                                                                                                                                                                            |
-| ├── gui.py                  # GUI components                                                                                                                                                                                 |
-| ├── products.csv            # Tracked product data                                                                                                                                                                           |
-| ├── requirements.txt        # Dependencies                                                                                                                                                                                   |
-| └── README.md               # Documentation                                                                                                                                                                                  |
-| ```                                                                                                                                                                                                                          |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **🔐 Security Note**                                                                                                                                                                                                          |
-| - Use **Gmail App Passwords** (not your main password)                                                                                                                                                                      |
-| - Avoid hardcoding credentials                                                                                                                                                                                              |
-| - Use `.env` or secure vaults for production                                                                                                                                                                                |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **💡 Future Enhancements**                                                                                                                                                                                                   |
-| - Multi-platform support                                                                                                                                                                                                    |
-| - Telegram/Discord alerts                                                                                                                                                                                                   |
-| - Auto-fetch product titles                                                                                                                                                                                                 |
-| - Price graphing and history                                                                                                                                                                                                |
-| - Cloud storage options                                                                                                                                                                                                     |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **🤝 Contributing**                                                                                                                                                                                                           |
-| Contributions are welcome! Fork the repo, open issues, or submit pull requests.                                                                                                                                              |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **📧 Contact**                                                                                                                                                                                                                |
-| - GitHub: [Shahriyarrrrr/PriceSentinel](https://github.com/Shahriyarrrrr/PriceSentinel)                                                                                                                                     |
-| - Email: shahriyarrrrr@example.com *(replace with your actual email)*                                                                                                                                                        |
-|                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **📝 License**                                                                                                                                                                                                                |
-| This project is licensed under the **MIT License**. See the `LICENSE` file for details.                                                                                                                                     |
+# PriceSentinel: Automated E-commerce Deal Tracker
+
+PriceSentinel is a powerful desktop application built with Python that automates the process of tracking product prices on e-commerce websites. It features a clean graphical user interface (GUI) built with Tkinter, allowing users to manage a list of products, set target prices, and receive real-time email notifications when a desired price drop is detected.
+
+The application leverages multi-threading to run the web scraping process in the background, ensuring the UI remains responsive at all times. All tracked products and user settings are saved locally to a CSV file for data persistence across sessions. PriceSentinel is designed to be a practical, set-and-forget tool for savvy online shoppers who want to catch the best deals without constant manual checking. It's an ideal example of using Python for practical automation and web interaction.
+
+---
+
+### Features at a Glance
+
+| Feature | Description |
+| :--- | :--- |
+| **Graphical Interface** | A clean and intuitive GUI built with Tkinter for easy product management. |
+| **Background Processing** | Multi-threaded architecture ensures the app never freezes while scraping. |
+| **Email Notifications**| Get instant email alerts via SMTP when a product hits your target price. |
+| **Data Persistence** | Your product tracking list is saved to `products.csv` and reloaded on launch. |
+| **Dynamic Management** | Add or remove products to track on the fly directly through the interface. |
+| **Robust Scraping** | Uses custom headers and error handling to improve success rate against anti-bot measures. |
+
+### How It Works
+
+1.  **Product Management**: The user adds product URLs and target prices through the GUI. This list is saved to `products.csv`.
+2.  **Scraping Thread**: When the "Start" button is clicked, a separate background thread is initiated. This thread is responsible for all network activity.
+3.  **Scraping Cycle**: The thread iterates through the product list, sending an HTTP request to each URL using the `requests` library.
+4.  **HTML Parsing**: The returned HTML content is parsed using `BeautifulSoup4` to find the product's title and current price.
+5.  **Price Comparison**: The scraped price is compared against the user's target price.
+6.  **Alerting**: If the price is at or below the target, the application triggers the `smtplib` module to send a deal alert email to the configured recipient.
+7.  **Logging**: All actions, successes, and errors are reported back to the main GUI thread via a thread-safe queue and displayed in the log window.
+
+### Technology Stack
+
+* **Language:** Python 3
+* **GUI:** Tkinter
+* **Web Scraping:** `requests` & `BeautifulSoup4`
+* **Concurrency:** `threading` & `queue`
+* **Email:** `smtplib` & `ssl`
+
+### Setup & Installation
+
+To run this project, you'll need Python 3 installed.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Shahriyarrrrr/PriceSentinel.git](https://github.com/Shahriyarrrrr/PriceSentinel.git)
+    cd PriceSentinel
+    ```
+
+2.  **Create and activate a virtual environment:**
+    ```bash
+    # For Windows
+    python -m venv env
+    .\env\Scripts\activate
+    ```
+
+3.  **Install the required libraries:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Usage
+
+1.  Run the main script from your terminal:
+    ```bash
+    python your_main_script_name.py
+    ```
+2.  Use the **"Add Product"** button to add product URLs and your desired target prices.
+3.  Fill in your email details in the **"Email Alert Settings"** panel. **Note:** For Gmail, you must generate and use an **App Password**.
+4.  Click **"Start Scraper"** to begin tracking. Logs will appear in the text box in real time.
+
+### License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
